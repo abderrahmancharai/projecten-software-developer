@@ -1,0 +1,19 @@
+*{
+    margin: 1;
+    padding: 0;
+    }
+    .wrapper {
+    width: 1170px;
+    margin:auto;
+}
+header{
+    background: url("img_girl.jpg");
+    height: 100vh;
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center center ;
+    position: relative;
+ }
+h1{
+height: 50;
+}

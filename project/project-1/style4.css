@@ -1,0 +1,202 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+    padding:0;
+    margin: 0;
+    font-size: 18px;
+    overflow-x: hidden;
+    
+  }
+         
+  
+  
+    
+  
+  
+  nav{
+    width:100%;
+    overflow:auto;
+    background:transparent;
+    background-color: #fff;
+    margin:0;
+    padding: 5px;
+    margin-top: -30px;
+   
+   
+    
+    
+
+    
+    
+  
+  
+  
+  }
+
+   /* text veranderen */
+  ul{
+    background-color: lavender;
+    padding: 0;
+    margin:0 0 0 250px;
+    list-style: none;
+  }
+  
+  li{
+    float: left ;
+  }
+  li a{
+    width: 100px;
+    display: block;
+    padding: 20px 15px;
+    text-decoration: none;
+    font-family: arial;
+    color: #171717;
+    text-align: center;
+    
+   
+  }
+  
+  li a:hover{
+    background: gray;
+  
+  
+  } 
+  .logo img {
+  position: absolute;
+  margin-top: 5px;
+  margin-left: -40px;
+  
+  }
+
+.download2 {
+    background-image: url("download2.jpg");
+    background-repeat: no-repeat;
+  }
+  
+  .contacttext {
+    margin: 0;
+    padding: 0;
+    font-size:6;
+    font-family:Arial;
+    position: flex;
+    margin-top: 5%;
+    margin-left: 800px;
+    transform: translate(-30%)translate(-20%); 
+    width: 700px;
+    color: whitesmoke;
+
+  }
+  
+  .opleidingsinfotext {
+    margin: 0;
+    padding: 0;
+    font-size:6;
+    font-family:Arial;
+    position: flex;
+    margin-top: 10%;
+    margin-left: 10%;
+    transform: translate(-30%)translate(-20%); 
+    width: 200px;
+    color: whitesmoke;
+
+  }
+  
+  .titel2 {
+  margin: 0;
+  padding: 0;
+  font-size: 6;
+  font-family: Arial;
+  position: flex;
+  margin-top: 0%;
+  margin-left: 10%;
+  color: whitesmoke;
+
+  }
+  
+  .video {
+    margin: 0;
+    padding: 0;
+    font-size:6;
+    font-family:Arial;
+    position: flex;
+    margin-top:0%;
+    margin-left: 600px;
+    transform: translate(-30%)translate(-20%);
+  
+  }
+  
+  .watgajeleren {
+    margin: 0;
+    padding: 0;
+    font-size:6;
+    font-family:Arial;
+    position: flex;
+    margin-top:5%;
+    margin-left: 530px;
+    transform: translate(-30%)translate(-20%);
+    width: 1000px;
+    color: whitesmoke;
+
+  }
+  
+  
+  .vakken {
+    margin: 0;
+    padding: 0;
+    font-size:6;
+    font-family:Arial;
+    position: flex;
+    margin-top:6%;
+    margin-left:130px;
+    transform: translate(-30%)translate(-20%);
+    color: whitesmoke;
+
+  }
+  
+  .ictvak {
+    margin: 0;
+    padding: 0;
+    font-size:6;
+    font-family:Arial;
+    position: flex;
+    margin-top:0%;
+    margin-left: 130px;
+    transform: translate(-30%)translate(-20%);
+    width: 200px;
+    color: whitesmoke;
+
+  }
+  
+  .don{
+  
+    font-size:100;
+    font-family:Arial;
+    height: 300;
+    margin-left:1120px;
+    margin-top: 200px;
+  
+  }
+  .box1 {
+    width: 100%;
+    margin: 10px;
+    padding: 25px;
+    background-color: rgb(101, 101, 238);
+    margin-top: 300px ;
+    text-align: center;
+  }
+  .texthomepage{
+    margin: 0;
+    padding: 0;
+    font-size:6;
+    font-family:Arial;
+    position: absolute;
+    margin-top: 1%;
+    left: 50%;
+    transform: translate(-30%)translate(-20%);
+    color: whitesmoke;
+
+  }
+  body{
+      background-color:#3c4053 ;
+  }

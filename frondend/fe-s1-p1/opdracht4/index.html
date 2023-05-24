@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="overons.html">over ons</a>
+              <ul>
+                <li><a href="">Wie zijn wij?</a></li>
+                <li><a href="">Portfolio</a></li>
+              </ul>
+              <li><a href="#contact">contact</a></li>
+            </li>
+          </ul>
+        </nav>
+
+        <div id="masthead">
+            <div class="slider-item active">
+                <img src="pexels-tima-miroshnichenko-5380664.jpg" alt="">
+                <div class="slider-content">
+                    <h2>Test</h2>
+                    <span>asdf;lkajsdf;lkjasdf;lkj</span>
+                </div>
+            </div>
+            <div class="slider-item">
+                <img src="pexels-cottonbro-5473950.jpg" alt="">
+                <div class="slider-content">
+                    <h2></h2>
+                    <span></span>
+                </div>
+            </div>
+            <div class="slider-item">
+                <img src="pexels-mati-mango-5952651.jpg" alt="">
+                <div class="slider-content">
+                    <h2></h2>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+   
+
+    
+    <script>
+setInterval(function(){slide()}, 5000);
+function slide() {
+
+    let activeSlide = document.querySelector('div.slider-item.active'),
+        nextslide= activeSlide.nextElementSibling;
+
+    if (!nextslide){
+        nextslide= document.querySelector('div#masthead div.slider-item:first-of-type');
+    }
+    activeSlide.classList.remove('active');
+    activeSlide.classList.add('sliding');
+    nextslide.classList.add('active');
+
+    setTimeout(function(){
+        document.querySelector('div.slider-item.sliding').classList.remove('sliding');
+
+    }, 800);
+   }
+
+    
+    
+
+ </script>
+
+
+</body>
+</html>

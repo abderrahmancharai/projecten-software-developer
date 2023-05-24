@@ -1,0 +1,331 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+  }
+  
+  body * {
+    box-sizing: border-box;
+  }  
+    
+  
+   
+    .navbar {
+      display: flex;
+      position: relative;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      color: white;
+      box-shadow: #555;
+    }
+    
+    .brand-title {
+      font-size: 1.5rem;
+      margin: .5rem;
+    }
+    
+    .navbar-links {
+      height: 100%;
+    }
+    
+    .navbar-links ul {
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .navbar-links li {
+      list-style: none;
+    }
+    
+    .navbar-links li a {
+      display: block;
+      text-decoration: none;
+      color: white;
+      padding: 1rem;
+    }
+    
+    .navbar-links li:hover {
+      background-color: #555;
+      transition: 0.8s;
+    }
+    
+    .toggle-button {
+      position: absolute;
+      top: .75rem;
+      right: 1rem;
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30px;
+      height: 21px;
+    }
+    
+    .toggle-button .bar {
+      height: 3px;
+      width: 100%;
+      background-color: white;
+      border-radius: 10px;
+    }
+    
+    @media (max-width: 800px) {
+      .navbar {
+          flex-direction: column;
+          align-items: flex-start;
+      }
+    
+      .toggle-button {
+          display: flex;
+      }
+    
+      .navbar-links {
+          display: none;
+          width: 100%;
+      }
+    
+      .navbar-links ul {
+          width: 100%;
+          flex-direction: column;
+      }
+    
+      .navbar-links ul li {
+          text-align: center;
+      }
+    
+      .navbar-links ul li a {
+          padding: .5rem 1rem;
+      }
+    
+      .navbar-links.active {
+          display: flex;
+      }
+    }
+    
+  
+  /*
+   MENU END
+  */
+  
+  /*
+   MASTHEAD START
+  */
+  
+  div#masthead,
+  div#masthead div.slider-item,
+  div#masthead div.slider-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  div#masthead {
+    position: relative;
+  }
+  
+  div#masthead div.slider-item {
+    display: flex;
+    left: 100%;
+    padding: 15vh 10vw 10vh 10vw;
+    align-items: center;
+    transition: left .8s ease;
+    z-index: 1;
+  }
+  
+  div#masthead div.slider-item.top { align-items: flex-start; }
+  div#masthead div.slider-item.bottom { align-items: flex-end; }
+  div#masthead div.slider-item.left { justify-content: flex-start; }
+  div#masthead div.slider-item.right { justify-content: flex-end; }
+  
+  div#masthead div.slider-item.active { left: 0; z-index: 2;}
+  div#masthead div.slider-item.sliding { left: -100%; }
+  
+  div#masthead div.slider-item img {
+    object-fit: cover;
+    object-position: 0 100%;
+    z-index: 1;
+    width: 100%;
+  }
+  
+  div#masthead div.slider-item div.slider-content {
+    position: relative;
+    width: 30rem;
+    padding: 0 1.5rem 1rem 1.5rem;
+    z-index: 3;
+    color: whitesmoke;
+  }
+  
+  div#masthead div.slider-item div.slider-content h2 {
+    text-align: center;
+  }
+  
+  footer {
+    padding: 1rem 0;
+    background-color: #333;
+    text-align: center;
+    color: #fff;
+  }
+  
+ .welkomhomepage{
+  text-align: left;
+ display:block;
+ background: salmon;
+ width: 49%;
+ float: right;
+ height: 100%;
+
+ 
+
+
+ }
+/* 
+ .welkomhomepage h1 {
+  background-color: red;
+  text-align: center;
+ } */
+
+.video{
+  margin: 0;
+  padding: 25px;
+  font-size:6;
+  font-family:Arial;
+  height: 30;
+  margin-top: none;
+  display: table;
+  position: absolute;
+ 
+  
+}
+
+ 
+ 
+     
+  @media all  and (max-width: 1000px) {
+   img{
+     width: 100%; 
+     height: 100%;
+   }
+   .video{
+     width: 100px;
+     height: 100px;
+     background: salmon;
+   }
+   
+  }
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 480px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  
+    
+
+  
+.yt-holder{
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  padding-bottom: 55%;
+ 
+
+}
+  .yt-holder >  iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .column h2,h5 {
+    color: whitesmoke;
+  }
+
+
+  .logotext{
+    width: 100%;
+  }
+
+  .container2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .card{
+    background: white;
+    width: 350px;
+    margin: 25px;
+    border-radius: 15px;
+
+  }
+  .card-image{
+
+    height: 200px;
+    margin-bottom: 15px;
+    background-size: cover;
+
+  }
+
+  .car-1{
+    background-image: url("C:/Users/Moham/OneDrive - MBO Utrecht/PRO-PRAK/Escape Room/pro-prak2/img/Schermafbeelding 2021-12-01 145432.png");
+  }
+
+  .car-2{
+    background-image: url("C:/Users/Moham/OneDrive - MBO Utrecht/PRO-PRAK/Escape Room/pro-prak2/img/Schermafbeelding 2021-12-01 143953.png");
+
+  }
+  .car-3{
+    background-image: url("C:/Users/Moham/OneDrive - MBO Utrecht/PRO-PRAK/Escape Room/pro-prak2/img/Schermafbeelding 2021-12-01 145014.png");
+  }
+
+  .card h2{
+    padding:10px
+  }
+  .card p{
+    padding: 10px;
+  }
+  .card a{
+    background-color: red ;
+    color: whitesmoke;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    text-decoration: none;
+
+  }
+  .card:hover{
+    background-color: gray;
+    color: whitesmoke;
+    transform: scale(1.03);
+    transition: all 1s ease;
+  }
+  .yt-holder{
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 55%;
+   
+  
+  }
+    .yt-holder >  iframe{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }

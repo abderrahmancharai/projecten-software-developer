@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="overons.html">over ons</a>
+              <ul>
+                <li><a href="">Wie zijn wij?</a></li>
+                <li><a href="">Portfolio</a></li>
+              </ul>
+              <li><a href="#contact">contact</a></li>
+            </li>
+          </ul>
+        </nav>
+
+        <div id="masthead">
+            <div class="slider-item active">
+                <img src="pexels-tima-miroshnichenko-5380664.jpg" alt="">
+                <div class="slider-content">
+                    <h2>Test</h2>
+                    <span>asdf;lkajsdf;lkjasdf;lkj</span>
+                </div>
+            </div>
+            <div class="slider-item">
+                <img src="pexels-cottonbro-5473950.jpg" alt="">
+                <div class="slider-content">
+                    <h2></h2>
+                    <span></span>
+                </div>
+            </div>
+            <div class="slider-item">
+                <img src="pexels-mati-mango-5952651.jpg" alt="">
+                <div class="slider-content">
+                    <h2></h2>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+          <div class="row"> 
+              <div class="col-half center">
+                  <h1>we shape the perfect solution</h1>
+                  <p>a small river named duden flows by their place and suplies  it with the nesscesarry regeili. it is a paradistic country, in wich roasted parts of  sentence fly into your mouth</p>
+                  <button class="style-1">solution</button>
+                  <button class="style-2"> contact</button>
+
+
+              </div>
+        </section>
+
+        <section id="services" class="bg-grey">
+            <div class="row"> 
+                <h2 class="center">services</h2>
+                <div class="col-third center">
+                    <img src="mockup.svg" alt=""> 
+                    <h3>design</h3>
+                    <button class="style-3">read more</button>
+                </div>
+                <div class="col-third center">
+                    <img src="css.svg" alt=""> 
+                    <h3>frontend</h3>
+                    <button class="style-3">read more</button>
+                </div>
+
+                <div class="col-third center">
+                    <img src="php.svg" alt=""> 
+                    <h3>backend</h3>
+                    <button class="style-3">read more</button>
+                </div>
+            </div>
+
+                
+        </section>
+
+        <section>
+            <div class="row">
+            <div class="col-third center">
+                <h3>learn the 3 treits that every icon set needs </h3>
+                <p>we'll walk trough a handfull od exsting apps, exutuve their icon 
+                    ustage, and cover the tree most important traits all icon set need.
+                </p>
+            </div>
+            <div class="col-third center"> 
+                <img src="img1.jpg" alt=""> 
+                
+            </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <script>
+
+setInterval(function(){slide()}, 5000);
+function slide() {
+
+    let activeSlide = document.querySelector('div.slider-item.active'),
+        nextslide= activeSlide.nextElementSibling;
+
+    if (!nextslide){
+        nextslide= document.querySelector('div.#masthead div.slider-item:first-of-type');
+    }
+    activeSlide.classList.remove('active');
+    activeSlide.classList.add('sliding');
+    nextslide.classList.add('active');
+
+    setTimeout(function(){
+        document.querySelector('div.slider-item.sliding').classList.remove('sliding');
+
+    }, 800);
+   }
+
+    
+    
+
+ </script>
+
+    
+
+
+</body>
+</html>
